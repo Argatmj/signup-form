@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign-Up-Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="sidebar">
       <div>
-        <img src="./assets/odin-lined.png" alt="odinson">
+        <img src="./assets/odin-lined.png" alt="odinson" />
         ODIN
       </div>
     </div>
+
     <div class="main-page">
-        <p></p>
-        <div class="form">
-            <form action="post">
-                    <label for="name">Username</label>
-                    <input type="text" name="user_name" id="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="user_email" id="email" required>
-                    <label for="pass">Password</label>
-                    <input type="password" name="user_pass" id="pass" required>
-                    <label for="tel">Phone Number</label>
-                    <input type="tel" name="user_tel" id="tel" required>
-                <button type="submit">Create Account</button>
+      <div class="info">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you relalize your deepest dreams. Sign Up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="post">
+        <fieldset>
+          <p>Let's do this!</p>
+            <div class="container">
+                <div class="form">
+                    <div class="input">
+                      <label for="fname">FIRST NAME</label>
+                      <input type="text" name="user_fname" id="fname" required />
+                    </div>
+                    <div class="input">
+                      <label for="email">EMAIL</label>
+                      <input type="email" name="user_email" id="email" required />
+                    </div>
+                    <div class="input">
+                      <label for="pass">PASSWORD</label>
+                      <input type="password" name="user_pass" id="pass" required />
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="input">
+                      <label for="lname">LAST NAME</label>
+                      <input type="text" name="user_lname" id="lname" required />
+                    </div>
+                    <div class="input">
+                      <label for="tel">PHONE NUMBER</label>
+                      <input type="tel" name="user_tel" id="tel" required />
+                    </div>
+                    <div class="input">
+                      <label for="cpass">CONFIRM PASSWORD</label>
+                      <input type="password" name="user_cpass" id="cpass" required />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="button">
+            <button type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
-            </form>
         </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>

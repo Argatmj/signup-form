@@ -15,6 +15,8 @@ html{
 
 p{
     margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
 }
 
 body{
@@ -56,32 +58,106 @@ body{
     width: 65%;
     display: flex;
     flex-direction: column;
-    border: var(--border);
+    background-color:#f9fafc;
+}
+
+.main-page > .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 45px;
+    height: 35%;
+    box-sizing: border-box;
+}
+
+.info > p{
+    font-weight: bold;
+    max-width: 50ch;
+    margin:5px;
+    font-size: 1.1rem;
+    font-family: Roboto, sans-serif;
+}
+
+.main-page > form{
+    height: 65%;
+}
+
+fieldset{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 16px 45px; 
+    height: 45%;
+    background-color: white;
+    border: 0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+fieldset > p {
+    font-weight: 700;
+}
+
+.container{
+    padding-top: 5px;
+    display: flex;
+    gap: 6%;
+    height: 100%;
+
 }
 
 .form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: var(--border);
+    gap: 16px;
+    width: 26%;
 }
 
-form{
+.input{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 12px;
-    padding: 8px;
-    gap:4px;
+    gap:1px;
+    font-size: 0.6rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
+input{
+    width: 100%;
+    height: 20px;
+}
+
+.button{
+    margin:32px 45px ;
+}
+
+.button > p{
+    margin-top:20px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+button{
+    border: 0;
+    width: 190px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #596D48;
+    color: white;
+    font-size: 0.7rem;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+a{
+    color: #596D48;
+    font-size: 0.7rem;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 input:invalid{
-    border-color: red;
-}
-
-input:valid{
-    border-color: blue;
+    /* border-color: red; */
 }
