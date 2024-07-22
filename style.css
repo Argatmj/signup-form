@@ -1,0 +1,35 @@
+:root{
+    --border: 1px solid black;
+}
+
+html{
+    height: 100%;
+}
+
+
+p{
+    margin-top: 0px;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    border: var(--border);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+
+}
